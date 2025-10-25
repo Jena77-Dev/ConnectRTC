@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { isToday, isYesterday, format, parseISO, startOfDay, isSameDay } from 'date-fns';
+import rocketChatSvg from '../assets/rocket-chat-1.svg'; 
 
 const ChatMessages = ({ messages, userDetails, selectedUserId, selectedUser, selectedGroupId,
   groups, onlinePeople, offlinePeople }) => {
@@ -258,7 +259,8 @@ const ChatMessages = ({ messages, userDetails, selectedUserId, selectedUser, sel
         <div className="text-gray-500 flex flex-col items-center justify-center h-full  border-gray-700">
           <div className="flex items-center justify-center mt-4">
             <img
-              src="/src/assets/rocket-chat-1.svg"
+              // src="/src/assets/rocket-chat-1.svg"
+              src={rocketChatSvg}
               alt="chat"
               className="w-100 h-40 object-contain mix-blend-screen"
             />

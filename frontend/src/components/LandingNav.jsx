@@ -11,9 +11,10 @@ const LandingNav = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            // src="https://flowbite.com/docs/images/logo.svg"//"Swift Logo"
+            src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234f46e5' rx='20'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='50' font-weight='bold' fill='white'>CR</text></svg>"
             className="h-8"
-            alt="Swift Logo"
+            alt="CR Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             ConnectRTC
