@@ -12,8 +12,6 @@ const cookieParser = require('cookie-parser');
 const createWebSocketServer = require("./webServer.js");
 const path = require("path");
 
-//database connection
-// connection();
 connectDB();
 app.use(express.json())
 app.use(cookieParser())
@@ -41,7 +39,7 @@ app.use(cors(corsOptions));
 app.use("/api/groups", groupRoutes);
 app.use("/api/user", userRoute);
 app.use("/api/avatar", avatarRoute);
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => console.log(`Application Running on Port ${port}`));
 
 createWebSocketServer(server); 
