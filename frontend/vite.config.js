@@ -20,10 +20,24 @@ export default defineConfig({
     //   }
     // }
   },
+  // esbuild: {
+  //   // drop: ['console', 'debugger'],  // Removes all console.* and debugger statements
+  //   drop: import.meta.env.PROD ? ['console', 'debugger'] : [],
+  // },
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src")
     }
-  }
+  },
+  // Alternative using build options
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,  // Remove console logs
+        drop_debugger: true, // Remove debugger statements
+      },
+    },
+  },
 })
