@@ -22,7 +22,7 @@ export default defineConfig({
   },
   esbuild: {
     // drop: ['console', 'debugger'],  // Removes all console.* and debugger statements
-    drop: import.meta.env.PROD ? ['console', 'debugger'] : [],
+    drop: import.meta.env.MODE === "production" ? ['console', 'debugger'] : [],
   },
   plugins: [react()],
   resolve: {
