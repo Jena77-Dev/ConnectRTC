@@ -24,7 +24,7 @@ const allowedOrigins = [
     "http://192.168.100.201:5173",
     "http://192.168.31.177:5173",
     "http://192.168.31.177:5174",
-    "https://connectrtc-zevy.onrender.com"
+    "https://connectrtc-frontend.onrender.com"
 ];
 
 const corsOptions = {
