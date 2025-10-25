@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { isToday, isYesterday, format, parseISO, startOfDay, isSameDay } from 'date-fns';
-import rocketChatSvg from '../assets/rocket-chat-1.svg'; 
+import rocketChatSvg from '../../assets/rocket-chat-1.svg'; 
 
 const ChatMessages = ({ messages, userDetails, selectedUserId, selectedUser, selectedGroupId,
   groups, onlinePeople, offlinePeople }) => {
